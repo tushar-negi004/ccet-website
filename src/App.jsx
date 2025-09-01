@@ -2,6 +2,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home.jsx';
 import Header from './components/header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
+import VisionMission from "./pages/vision-mission/vision-mission.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import './index.css';
@@ -29,6 +30,7 @@ function App() {
         <Route path="/anti-ragging-committee" element={<AntiRaggingCommittee />} />
         <Route path="/about/academic-heads" element={<Academicheads />} /> 
         <Route path="/courses" element={<Courses />} />
+        <Route path="/vision-mission" element={<VisionMission />} />
         <Route path="/about/principal" element={<Principal />}/>
         <Route path="/students-section/courses" element={<Courses />} />
         <Route path="/prospectus" element={<AcademicProspectusPage />} />
