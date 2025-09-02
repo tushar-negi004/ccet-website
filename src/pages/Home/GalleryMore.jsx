@@ -131,7 +131,6 @@ const GalleryMore = () => {
             className="modal-close-btn"
             aria-label="Close"
           >
-            ×
           </button>
         </div>
       </Modal>
