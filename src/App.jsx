@@ -16,12 +16,12 @@ import Principal from "./pages/Principal/Principal.jsx";
 import AcademicProspectusPage from "./pages/Academic-Prospectus/AcademicProspectusPage.jsx";
 import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 import NIRF from "./pages/NIRF/nirf.jsx";
-import ECell from './pages/ECell/ECell.jsx';
+
 import Examinations from './pages/Examinations/Examinations.jsx';
 
 import ECell from './pages/ECell/ECell.jsx';
-import Examinations from './pages/Examinations/Examinations.jsx';
-import AdmissionNotices from "./pages/AdmissionNotices/AdmissionNotices.jsx";
+
+
 import SportsFacility from './pages/Sports/SportsFacility.jsx';
 
 

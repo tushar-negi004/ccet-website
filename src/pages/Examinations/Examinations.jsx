@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import pdf from "../../../public/pdfs/dummy.pdf"
+import pdf from "../../assets/examinations/dummy.pdf";
 
 const Examinations = () => {
     
