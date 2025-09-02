@@ -26,7 +26,6 @@ const Gallery = () => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const autoSlide = React.useRef(null);
 
-  // Make overlay close on click except for mobile
   const isMobile = window.innerWidth <= 600;
 
   const openModal = (index) => {
@@ -61,7 +60,6 @@ const Gallery = () => {
     return () => clearInterval(autoSlide.current);
   }, [modalIsOpen]);
 
-  // Click outside image to close modal except mobile view
   const handleModalOverlayClick = (e) => {
     if (!isMobile && e.target.classList.contains('ReactModal__Overlay')) {
       closeModal();
@@ -108,7 +106,6 @@ const Gallery = () => {
         parentSelector={() => document.body}
         onAfterOpen={() => (document.body.style.overflow = 'hidden')}
         onAfterClose={() => (document.body.style.overflow = '')}
-        // Custom overlay click handling
         onClick={handleModalOverlayClick}
       >
         <div style={{ position: 'relative', textAlign: 'center' }}>
@@ -117,7 +114,7 @@ const Gallery = () => {
             alt={allImages[currentIndex].alt}
             className="gallery-modal-img"
             style={{ cursor: isMobile ? 'default' : 'pointer' }}
-            onClick={(e) => e.stopPropagation()} // Prevent overlay close when clicking image
+            onClick={(e) => e.stopPropagation()}
           />
           <p className="gallery-modal-caption">{allImages[currentIndex].alt}</p>
           {!isMobile && (

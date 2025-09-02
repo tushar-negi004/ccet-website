@@ -61,7 +61,6 @@ const GalleryMore = () => {
     return () => clearInterval(autoSlide.current);
   }, [modalIsOpen]);
 
-  // Click outside image to close modal except mobile view
   const handleModalOverlayClick = (e) => {
     if (!isMobile && e.target.classList.contains('ReactModal__Overlay')) {
       closeModal();
@@ -69,7 +68,7 @@ const GalleryMore = () => {
   };
 
   return (
-    <div className="py-5 text-white bg-gradient-to-r from-slate-900 to-blue-900">
+    <div className="py</div>-5 text-white bg-gradient-to-r from-slate-900 to-blue-900">
       <div className="text-center mb-4">
         <h2 style={{ fontWeight: 'bold' }}>FULL GALLERY</h2>
       </div>
@@ -108,7 +107,6 @@ const GalleryMore = () => {
         onAfterOpen={() => (document.body.style.overflow = 'hidden')}
         onAfterClose={() => (document.body.style.overflow = '')}
         parentSelector={() => document.body}
-        // Custom overlay click handling
         onClick={handleModalOverlayClick}
       >
         <div style={{ position: 'relative', textAlign: 'center' }}>
