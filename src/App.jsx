@@ -34,7 +34,7 @@ import History from "./pages/History/History.jsx";
 function App() {
 	return (
 		<HashRouter>
-			<Header />
+			<div className="navigation-bar"><Header /></div>
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="*" element={<NoPage />} />
