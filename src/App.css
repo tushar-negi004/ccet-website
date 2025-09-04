@@ -14,34 +14,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Navigation bar height control */
-.navigation-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-/* Responsive spacer for fixed nav bar */
-.navbar-spacer {
-  height: 130px; /* mobile first */
-}
-
-/* Tablets */
-@media (min-width: 640px) {
-  .navbar-spacer {
-    height: 150px;
-  }
-}
-
-/* Desktops */
-@media (min-width: 1024px) {
-  .navbar-spacer {
-    height: 190px;
-  }
-}
-
 @layer utilities {
   @keyframes scroll {
     0% { transform: translateX(0%); }
