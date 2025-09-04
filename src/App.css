@@ -3,23 +3,43 @@
 @tailwind utilities;
 
 html, body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
-
 
 #root {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
+/* Navigation bar height control */
 .navigation-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Responsive spacer for fixed nav bar */
+.navbar-spacer {
+  height: 130px; /* mobile first */
+}
+
+/* Tablets */
+@media (min-width: 640px) {
+  .navbar-spacer {
+    height: 150px;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  .navbar-spacer {
+    height: 190px;
+  }
 }
 
 @layer utilities {
@@ -27,9 +47,7 @@ html, body {
     0% { transform: translateX(0%); }
     100% { transform: translateX(-50%); }
   }
-
   .animate-scroll {
     animation: scroll 30s linear infinite;
   }
 }
-
