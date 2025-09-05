@@ -29,7 +29,7 @@ import Degree from "./pages/Degree/Degree.jsx";
 import Tenders from "./pages/Tenders/Tenders.jsx";
 import History from "./pages/History/History.jsx";
 import StudentChaptersandClubs from "./pages/StudentChaptersandClubs/StudentChaptersandClubs.jsx";
-
+import NewsDetails from "./pages/Home/NewsDetails.jsx";
 function App() {
   return (
     <HashRouter>
@@ -97,6 +97,12 @@ function App() {
               <Courses />
               <Footer />
             </>
+          }
+        />
+        <Route
+          path="/news"
+          element={
+            <NewsDetails />
           }
         />
 
