@@ -31,7 +31,11 @@ const AboutUsMenu = () => {
         <span key="officials" className="block w-full cursor-default">
           Officials at CCET
         </span>,
-        <Link to="/about/academic-heads" className="block w-full" key="academic-heads">
+        <Link
+          to="/about/academic-heads"
+          className="block w-full"
+          key="academic-heads"
+        >
           Academic Heads
         </Link>,
 
@@ -49,15 +53,16 @@ const AboutUsMenu = () => {
               </li>
             </ul>
           )}
-        </div>
+        </div>,
       ],
     },
     {
       title: "Life @ CCET",
       links: [
-        <span key="tour" className="block w-full cursor-default">
-          Campus Virtual Tour
-        </span>,
+        <Link to="/life/virtual-tour" className="block w-full" key="tour">
+  Campus Virtual Tour
+</Link>
+,
         <a
           href="https://ccet.ac.in/library/"
           target="_blank"
@@ -67,13 +72,17 @@ const AboutUsMenu = () => {
         >
           Library
         </a>,
-        <span key="classrooms" className="block w-full cursor-default">
+        <Link to="/classrooms" className="block w-full" key="classrooms">
           Class Rooms
-        </span>,
+        </Link>,
         <span key="canteen" className="block w-full cursor-default">
           Canteen
         </span>,
-        <Link to="/infrastructure" className="block w-full" key="infrastructure">
+        <Link
+          to="/infrastructure"
+          className="block w-full"
+          key="infrastructure"
+        >
           Infrastructure
         </Link>,
         <a
@@ -85,7 +94,11 @@ const AboutUsMenu = () => {
         >
           Policy on use of IT Resources
         </a>,
-        <Link to="/sports-facility" className="block w-full" key="sports-facility">
+        <Link
+          to="/sports-facility"
+          className="block w-full"
+          key="sports-facility"
+        >
           Sports Facility
         </Link>,
       ],
@@ -93,7 +106,7 @@ const AboutUsMenu = () => {
   ];
 
   return (
-    <div className="absolute top-full -left-20 transform overflow-x-auto -translate-x-[9%] hidden group-hover:grid grid-cols-3 bg-white/80 shadow-xl z-50 p-6 gap-8 text-1xl text-gray-800 rounded-lg border border-gray-100 w-[1000px] max-w-[90vw] right-0 mx-auto">
+    <div className="absolute top-full -left-20 transform overflow-x-auto -translate-x-[9%] hidden group-hover:grid grid-cols-3 bg-white/80 backdrop-blur-md shadow-xl z-50 p-6 gap-8 text-1xl text-gray-800 rounded-lg border border-gray-100 w-[1000px] max-w-[90vw] right-0 mx-auto">
       {sections.map((section, i) => (
         <div key={i}>
           <div className="font-semibold border-b border-gray-200 pb-2 mb-3 text-red-700">
